@@ -1,4 +1,4 @@
-package com.campusdual.methods;
+package campusdual.com.methods;
 
 public class Method {
 
@@ -35,10 +35,18 @@ public class Method {
     }
 
 
+    public static String myCustomMessage (String custoName){
+        return "Hi " + custoName + "! This is your custom message";
+    }
+
+
     public static void main(String[] args) {
         logicOperators();
         int arithResult = arithmeticOperators();
         System.out.println("Arithmetic result: " + arithmeticOperators());
+        String name = "Iris";
+        System.out.println(myCustomMessage(name));
+        System.out.println(myCustomMessage( "Nerea"));
 
     }
 }

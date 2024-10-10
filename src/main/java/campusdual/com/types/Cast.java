@@ -1,4 +1,4 @@
-package com.campusdual.types;
+package campusdual.com.types;
 
 public class Cast {
     public static void main(String[] args) {

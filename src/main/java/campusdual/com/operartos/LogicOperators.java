@@ -1,4 +1,4 @@
-package com.campusdual.operartos;
+package campusdual.com.operartos;
 
 public class LogicOperators {
     public static void main(String[] args) {

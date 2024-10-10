@@ -1,4 +1,4 @@
-package com.campusdual.variables;
+package campusdual.com.variables;
 
 public class Variable {
     public static void main(String[] args) {

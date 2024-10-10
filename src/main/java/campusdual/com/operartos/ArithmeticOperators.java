@@ -1,4 +1,5 @@
-package com.campusdual.operartos;
+package campusdual.com.operartos;
+
 
 public class  ArithmeticOperators {
     public static void main(String[] args) {
