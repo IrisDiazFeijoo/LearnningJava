@@ -46,6 +46,8 @@ public class Method {
         System.out.println("Arithmetic result: " + arithmeticOperators());
         String name = "Iris";
         System.out.println(myCustomMessage(name));
+        String message = name;
+        System.out.println(message);
         System.out.println(myCustomMessage( "Nerea"));
 
     }
