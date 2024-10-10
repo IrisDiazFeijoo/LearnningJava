@@ -1,5 +1,7 @@
 package campusdual.com.Input;
 
+import com.campusdual.Utils;
+
 import java.util.Scanner;
 
 public class Input {
@@ -11,8 +13,14 @@ public class Input {
         System.out.println("HI " + name);
     }
 
+    public static void  useUtilsToGetName (){
+        int name = Utils.integer("Write your name: ");
+        System.out.println("HI " + name);
+    }
+
     public static void main (String [] args) {
-        useScannerToGetName();
+        //useScannerToGetName();
+        useUtilsToGetName();
 
     }
 }
