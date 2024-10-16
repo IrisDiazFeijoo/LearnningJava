@@ -1,6 +1,6 @@
 package campusdual.com.selection;
 
-public class ifStatement {
+public class  ifStatement {
 
     public static void methodIf (int value){
         if (value >= 5){
@@ -20,17 +20,17 @@ public class ifStatement {
 
     public static void methodIfElseIf (int value){
         if (value >= 10){
-            System.out.println("3.- Greater or equal than 10");
+            System.out.println(" 3.- Greater or equal than 10");
 
         } else if (value <= 5){
-            System.out.println("3.- Lower or equal than 5");
+            System.out.println(" 3.- Lower or equal than 5");
         } else {
-            System.out.println("3.- Between 6 and 9");
+            System.out.println(" 3.- Between 6 and 9");
         }
     }
 
     public static void main(String[] args) {
-        int myNum = 12;
+        int myNum = 7;
                 methodIf(myNum);
                 methodIfElse(myNum);
                 methodIfElseIf(myNum);
