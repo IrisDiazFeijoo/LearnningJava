@@ -4,7 +4,7 @@ import com.campusdual.Utils;
 
 public class Book {
 
-    public String title;
+    private String title;
     public String author;
     public int pageNumber;
 
@@ -20,7 +20,7 @@ public class Book {
         this.author = author;
         this.pageNumber = numberOfPages;
     }
-    public void showBookDetails(){
+    protected void showBookDetails(){
         System.out.println(this.title + " - " + this.author + " - " + "(" + this.pageNumber + " pages)");
     }
 
