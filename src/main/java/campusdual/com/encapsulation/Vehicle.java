@@ -54,4 +54,35 @@ public class Vehicle {
     public void setAvailable(boolean available) {
         this.available = available;
     }
+
+    public void rentACar() {
+        if (this.available) {
+            this.available = false;
+            System.out.println("The vehicle with license plate " + this.licensePlate + " has been rented.");
+        } else {
+            System.out.println("The vehicle with license plate " + this.licensePlate + " is not available.");
+        }
+    }
+
+    public void returnACar() {
+        if (!this.available) {
+            this.available = true;
+            System.out.println("The vehicle with license plate " + this.licensePlate + " has been returned.");
+        } else {
+            System.out.println("The vehicle with license plate " + this.licensePlate + " is already available.");
+        }
+    }
+
+    public String getDetails(){
+        return this.brand + " " + this.model + "\n\tlicense plate: " + this.licensePlate + "\n\tAvailable: " + (this.available ? "Yes" : "No");
+    }
+
+    public static void main(String[] args) {
+        Vehicle v = new Vehicle("0000BBB", "Citroën", "XSara");
+        System.out.println(v.getDetails());
+        v.rentACar();
+        System.out.println(v.getDetails());
+        v.returnACar();
+        System.out.println(v.getDetails());
+    }
 }
