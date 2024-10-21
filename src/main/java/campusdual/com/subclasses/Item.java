@@ -1,22 +1,22 @@
 package campusdual.com.subclasses;
 
 public class Item {
-    private String tittle;
+    private String title;
     private String publicationDate;
     private boolean checkedOut = false;
 
 
-    public Item(String tittle, String publicationDate) {
-        this.tittle = tittle;
+    public Item(String title, String publicationDate) {
+        this.title = title;
         this.publicationDate = publicationDate;
     }
 
-    public String getTittle() {
-        return tittle;
+    public String getTitle() {
+        return title;
     }
 
-    public void setTittle(String tittle) {
-        this.tittle = tittle;
+    public void setTittle(String title) {
+        this.title = title;
     }
 
     public boolean isCheckedOut() {
@@ -36,7 +36,24 @@ public class Item {
     }
 
     public String getDetails(){
-        return "Title: " + this.tittle+ " , Publication date: " + this.publicationDate + " , Checked Out: " + this.checkedOut;
+        return "Title: " + this.title+ " , Publication date: " + this.publicationDate + " , Checked Out: " + this.checkedOut;
+    }
+
+    public void checkedOut(){
+        if (!this.checkedOut){
+            this.checkedOut = true;
+            System.out.println(this.title + " has been checked out. ");
+        }else{
+            System.out.println(this.title + " is already checked out. ");
+        }
+    }
+    public void returnItem(){
+        if (this.checkedOut){
+            this.checkedOut = false;
+            System.out.println(this.title + " has been returned. ");
+        } else{
+            System.out.println(this.title + " has not checked out. ");
+        }
     }
 }
 
