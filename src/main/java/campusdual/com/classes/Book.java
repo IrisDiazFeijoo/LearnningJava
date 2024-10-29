@@ -1,4 +1,4 @@
-package campusdual.com.Classes;
+package campusdual.com.classes;
 
 import com.campusdual.Utils;
 
