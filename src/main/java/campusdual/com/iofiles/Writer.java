@@ -2,7 +2,6 @@ package campusdual.com.iofiles;
 
 import com.campusdual.Utils;
 
-import javax.imageio.IIOException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
